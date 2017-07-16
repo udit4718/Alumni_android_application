@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/profileimage"
+        android:layout_margin="13dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_name"
+        android:textColor="@color/black_de"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/profileimage"
+        android:layout_toRightOf="@+id/profileimage"
+        android:layout_toEndOf="@+id/profileimage"
+
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_designation"
+        android:layout_below="@+id/textView_name"
+        android:layout_toRightOf="@+id/briefcase"
+        android:layout_toEndOf="@+id/briefcase"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_location"
+
+        android:layout_alignTop="@+id/icon_location"
+        android:layout_toRightOf="@+id/icon_location"
+        android:layout_toEndOf="@+id/icon_location"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp" />
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:id="@+id/icon_location"
+        app:iiv_icon="faw-map-marker"
+        app:iiv_color="@color/grey_icon"
+        android:layout_below="@+id/textView_designation"
+        android:layout_alignLeft="@+id/briefcase"
+        android:layout_alignStart="@+id/briefcase"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_passing_year"
+        android:layout_alignTop="@+id/textView_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginRight="10dp"
+        android:textSize="14sp" />
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:id="@+id/briefcase"
+        app:iiv_icon="faw-briefcase"
+        app:iiv_color="@color/grey_icon"
+        android:layout_above="@+id/icon_location"
+        android:layout_alignLeft="@+id/textView_name"
+        android:layout_alignStart="@+id/textView_name"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"
+
+        android:layout_below="@+id/textView_location"
+        android:layout_toRightOf="@+id/profileimage"
+        android:layout_toEndOf="@+id/profileimage"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.post_login.PostLoginActivity">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/material_progressBar"
+        android:indeterminate="true"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragmentMenuContainer"
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/material_progressBar" />
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:name="com.example.ashish.alumini.fragments.FragmentBottomMenu"
+        android:id="@+id/fragmentMenuContainer"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_menu_bottom" />
+</RelativeLayout>

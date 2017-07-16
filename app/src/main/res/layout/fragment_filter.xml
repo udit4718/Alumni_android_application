@@ -1,0 +1,80 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.BlankFragment"
+        android:layout_above="@+id/view2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YEAR"
+                android:textAlignment="viewStart"
+                style="?android:attr/borderlessButtonStyle"
+
+                android:id="@+id/button_year"/>
+            >
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_filter_list"
+                android:id="@+id/fragment_container_year"
+
+                android:name = "com.example.ashish.alumini.fragments.filter_fragments.FragmentFilterYear"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BRANCH"
+                android:textAlignment="viewStart"
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/button_branch"
+                android:layout_gravity="center_horizontal|top" />
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_filter_list"
+                android:id="@+id/fragment_container_branch"
+                android:name = "com.example.ashish.alumini.fragments.filter_fragments.FragmentFilterBranch"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:id="@+id/view2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Filter"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/button_apply_filter"
+ />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+

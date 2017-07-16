@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ashish.alumini">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:name=".application.MyApplication"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.pre_login.ActivitySplashScreen"
+            android:label="Alumni">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".activities.pre_login.Login"/>
+        <activity android:name=".activities.pre_login.SignUp"/>
+        <activity android:name=".activities.post_login.MainScreenActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity android:name=".activities.post_login.PostLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity android:name=".activities.pre_login.MainActivity"/>
+
+
+        <meta-data android:name="AA_DB_NAME" android:value="alumni.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="3" />
+        <meta-data android:name="AA_MODELS" android:value="com.example.ashish.alumini.network.models.MemberInstanceModel,
+        com.example.ashish.network.models.JobInstanceModel" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="da38eee0478ea4410af014a915ab75e80ef63a34" />
+    </application>
+
+
+</manifest>
+
+
+
+
+
+
+
+

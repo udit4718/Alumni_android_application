@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="4"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout_home"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="11dp"
+            android:id="@+id/button_home"
+            app:iiv_color="@color/appTheme"
+            app:iiv_icon="faw-users" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/appTheme"
+            android:id="@+id/view_home"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout_filter"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="11dp"
+            android:id="@+id/button_filter"
+            app:iiv_color="@android:color/black"
+            app:iiv_icon="faw-filter" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/appTheme"
+            android:id="@+id/view_filter"
+            android:visibility="gone"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout_jobs"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="11dp"
+            android:id="@+id/button_jobs"
+            app:iiv_color="@android:color/black"
+            app:iiv_icon="faw-briefcase"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/appTheme"
+            android:visibility="gone"
+            android:id="@+id/view_jobs"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/linearLayout_settings"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/button_settings"
+            app:iiv_color="@android:color/black"
+            app:iiv_icon="faw-ellipsis-h"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/appTheme"
+            android:visibility="gone"
+            android:id="@+id/view_settings"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
